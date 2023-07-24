@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> 
+    <!-- vue.js -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Boolzapp</title>
+</head>
+
+
+
+<body>
+  <div class="back-bg-layer">
+
+    <div class="container">
+
+      <div class="chats">
+
+              <!-- ptofile picture -->
+        <div class="profile-picture p-3 bg-light ">
+          <div class="d-flex justify-content-center align align-items-center">
+            <img src="img/avatar_io.jpg" alt="">
+            <h6 class="contact-name"> Me </h6>
+
+            <i class="fa-solid fa-rotate-right"></i>
+            <i class="fa-solid fa-message"></i>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+
+              <!-- notification -->
+        <div class="notification p-3 bg-info d-flex ">
+          <div class="d-flex justify-content-center align align-items-center">
+            <i class="fa-solid fa-bell-slash"></i>
+          </div>
+          
+          <div>
+            <h6>Ricevi notifiche di nuovi messaggi </h6>
+            <small><a class="active-notification">Attiva notifiche desktoo </a></small>
+          </div>
+
+        </div>
+
+                <!-- search-->
+        <div class="search p-3 bg-light d-flex align align-items-center">
+          <div >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class=" d-flex">
+            <input class="form-control form-control-lg" type="text" placeholder="cerca o inizi un messaggio  ">
+
+          </div>
+          
+          
+
+        </div>
+
+                <!-- chat header -->
+        <div class="chat-header bg-light">
+
+          <div class="contact d-flex ">
+
+            <img  src="img/avatar_1.jpg" alt="">
+            <h6 class="contact-name">Michele </h6>
+            <small class="message-time">orario</small>
+
+          </div>
+
+        </div>
+      </div>
+
+            <!--  conversation container -->
+      <div class="chat-conversation d-flex flex-column"> 
+        <div class="contact-picture p-3 bg-light ">
+          <div class="d-flex justify-content-center align align-items-center">
+            <img src="img/avatar_1.jpg" alt="">
+            <h6 class="contact-name"> Michele </h6>
+
+            <i class="fa-solid fa-rotate-right"></i>
+            <i class="fa-solid fa-message"></i>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+
+        <!-- conversation-content -->
+        <div class="conversation-content flex-grow-1">
+
+        </div>
+
+        <!-- typing text -->
+        <div class="typing-text d-flex justify-content-center align align-items-center p-1">
+          <div>
+            <i class="fa-regular fa-face-smile p-3"></i>
+          </div>
+          <div class="flex-grow-1">
+            <input class="form-control form-control-lg" type="text" placeholder="scrivi un messaggio ">
+          </div>
+          <div>
+            <i class="fa-solid fa-microphone-slash ps-3"></i>
+          </div>
+          
+
+        </div>
+
+
+
+
+      </div>
+
+
+
+
+    </div>
+    <div class="header-absolute"></div>
+    <!-- <div class="body-main-bg"></div> -->
+
+
+
+  </div>
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+
+
+</html>

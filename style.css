@@ -1,0 +1,132 @@
+/*------------------- General Styles------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D9DBD3;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+
+
+}
+
+
+
+
+/* --------------------  main-background -------------------*/
+/* ----------------------- header & body -------------------- */
+.header-absolute{
+    background-color: #038C73;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* .back-bg-layer{
+    position: relative;
+} */
+
+
+/* ------------------------------------------------------ */
+/* -------------------- main container -------------------*/
+
+.container{
+    margin: auto;
+    max-width: 1200px;
+    min-height: calc(100vh - 60px);
+    color: black;
+    position: relative;
+    z-index: 2;
+    top: 30px;
+    bottom: 30px;
+    display: flex;
+}
+
+/* ------------------------------------------------------ */
+/* -------------------- chats -------------------*/
+
+.chats{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgb(221, 220, 220);
+}
+
+.chat-header{
+    border: #038C73;
+    padding: 10px;
+    width: 400px;
+    flex-grow: 1;
+    overflow: auto;
+    /* perche nn funziona lo scroll? */
+
+
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+.contact-name{
+    flex-grow: 1;
+}
+
+.contact{
+    border-top : 1px solid rgb(221, 220, 220);
+    border-bottom : 1px solid rgb(221, 220, 220);
+    padding: 15px;
+    
+}
+
+
+
+i{
+    font-size: 15px;
+    color: rgb(97, 94, 94);
+    margin-right: 1rem;
+}
+
+
+
+.notification i{
+    background-color: white;
+    aspect-ratio: 1/1;
+    font-size: rem;
+    border-radius: 50%;
+    padding: 6px;
+
+    
+}
+
+a{
+    color:rgb(97, 94, 94); ;
+}
+
+/* ----------------------------------------------- */
+/* -------------------- chats -------------------*/
+
+.chat-conversation{
+    width: 800px;
+}
+
+.typing-text i{
+    font-size: 20px;
+}
+
+.typing-text{
+    background-color: #F3EEEA
+    ;
+}
+
+.chat-conversation{
+    background-image: url(img/mine.jpg);
+}
