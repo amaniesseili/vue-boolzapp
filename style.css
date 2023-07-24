@@ -130,3 +130,24 @@ a{
 .chat-conversation{
     background-image: url(img/mine.jpg);
 }
+
+/* ----------------------------------------------- */
+/* ---------------- conversation-content -----------------*/
+
+.sent-message{
+    background-color:#D4F2B6;
+    padding: 10px;
+    max-width: 550px;
+    border-radius: 10px;
+    margin: 10px;
+
+}
+
+.received-message {
+    background-color: white;
+    padding: 10px;
+    max-width: 550px;
+    border-radius: 10px;
+    margin: 10px;
+
+}
