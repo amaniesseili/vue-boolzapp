@@ -64,18 +64,45 @@
 
         </div>
 
-                <!-- chat header -->
-        <div class="chat-header bg-light">
-
-          <div class="contact d-flex ">
-
-            <img  src="img/avatar_1.jpg" alt="">
-            <h6 class="contact-name">Michele </h6>
-            <small class="message-time">orario</small>
-
+                <!-- chat header -->   
+        <!-- <div class="chat-header d-flex flex-column bg-light"> -->
+                 <!-- perche nn funziona lo scroll -->
+          <!-- <div class="contact flex-grow-1 overflow-auto list-group list-group-flush ">
+            <div class="list-group-item list-group-item-action d-flex"> -->
+                    <!-- contact. pic -->
+              <!-- <div class="avatar">
+                <img  src="img/avatar_1.jpg" alt="">
+              </div> -->
+                    <!--contact info -->
+              <!-- <div class="text flex-grow-1">
+                <div>Michele</div>
+                <small>Ultimo messaggio inviato..</small>
+              </div> -->
+                    <!--time  -->
+              <!-- <div class="time-container"> <small>10:20</small></div>
+            </div>
           </div>
 
-        </div>
+        </div> -->
+
+
+<!-- --------------------------------------------- -->
+<div id="app">
+  
+
+  <div class="contact-list">
+    <div v-for="contact in contacts" :key="contact.id" class="contact-item">
+      <img :src="contact.avatar" alt="">
+      <h6 class="contact-name">{{ contact.name }}</h6>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- ---------------------------------- -->
       </div>
 
             <!--  conversation container -->
@@ -102,6 +129,7 @@
             <p>Grazie per il messaggio! Stiamo connettendo con un operatore. Attendi per una rispota . Grazie!</p>
 
           </div>
+
 
           
 
