@@ -90,10 +90,12 @@
 <div id="app">
   
 
-  <div class="contact-list">
-    <div v-for="contact in contacts" :key="contact.id" class="contact-item">
+  <div class="contact-list flex-grow-1 overflow-hidden list-group list-group-flush ">
+    <div class="list-group-item list-group-item-action d-flex gap-3"
+      v-for="contact in contacts" :key="contact.id" class="contact-item">
       <img :src="contact.avatar" alt="">
-      <h6 class="contact-name">{{ contact.name }}</h6>
+    
+      <h6 class="contacts-name">{{ contact.name }}</h6>
     </div>
   </div>
 </div>
