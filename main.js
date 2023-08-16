@@ -85,7 +85,7 @@ const app = Vue.createApp({
     data() {
         return {
             contacts: [
-                { id: 1, name: "Michele", avatar: "img/avatar_1.jpg" },
+                { id: 1, name: "Michele", avatar: "img/avatar_1.jpg",message: "Hai portato a spasso il cane?" },
                 { id: 2, name: "fabio", avatar: "img/avatar_2.jpg" },
                 { id: 3, name: "samuele", avatar: "img/avatar_3.jpg" },
                 { id: 4, name: "luisa", avatar: "img/avatar_4.jpg" },
@@ -100,7 +100,13 @@ const app = Vue.createApp({
                 { id: 3, name: "Miriam", avatar: "img/avatar_3.jpg" },
                 
         ],
-    };
+        curentContact: null 
+    }
+    },
+    methods: {
+      onUserClick(singleContact){
+        this.curentContact= singleContact   // perche non mi stampa i messaggi ?
+      }
     },
 });
 

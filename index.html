@@ -92,7 +92,8 @@
 
   <div class="contact-list flex-grow-1 overflow-hidden list-group list-group-flush ">
     <div class="list-group-item list-group-item-action d-flex gap-3"
-      v-for="contact in contacts" :key="contact.id" class="contact-item">
+      v-for="contact in contacts" 
+      @click="onUserClic(contact)">
       <img :src="contact.avatar" alt="">
 
       <div class="text flex-grow-1"> 
