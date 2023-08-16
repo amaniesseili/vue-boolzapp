@@ -90,8 +90,15 @@ const app = Vue.createApp({
                 { id: 3, name: "samuele", avatar: "img/avatar_3.jpg" },
                 { id: 4, name: "luisa", avatar: "img/avatar_4.jpg" },
 
-                { id: 3, name: "samuele", avatar: "img/avatar_3.jpg" },
-                { id: 4, name: "luisa", avatar: "img/avatar_4.jpg" },
+                { id: 3, name: "Mario", avatar: "img/avatar_3.jpg" },
+                { id: 4, name: "lucia", avatar: "img/avatar_4.jpg" },
+                
+                { id: 3, name: "Federico", avatar: "img/avatar_3.jpg" },
+                { id: 4, name: "Filippo", avatar: "img/avatar_4.jpg" },
+
+                
+                { id: 3, name: "Miriam", avatar: "img/avatar_3.jpg" },
+                
         ],
     };
     },

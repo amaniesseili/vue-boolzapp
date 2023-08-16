@@ -94,8 +94,15 @@
     <div class="list-group-item list-group-item-action d-flex gap-3"
       v-for="contact in contacts" :key="contact.id" class="contact-item">
       <img :src="contact.avatar" alt="">
-    
+
+      <div class="text flex-grow-1"> 
       <h6 class="contacts-name">{{ contact.name }}</h6>
+      <small>Ultimo messaggio inviato.. </small>
+      </div>
+      <div class="time-container"> <small>10:20</small></div>
+
+      <!-- PERCHE NON FUNZIONA LO SCROLL? -->
+
     </div>
   </div>
 </div>
